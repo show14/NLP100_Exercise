@@ -8,4 +8,3 @@ splits = str.split()  # スペースで区切って単語ごとのリストを�
 ans = [len(i) for i in splits]
 
 print(ans)
-
