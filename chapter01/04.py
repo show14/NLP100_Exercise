@@ -9,9 +9,9 @@ one_char = [1, 5, 6, 7, 8, 9, 15, 16, 19]
 ans = {}
 
 for i, word in enumerate(splits, start=1):
-  if i in one_char:
-    ans[word[0]] = i
-  else:
-    ans[word[:2]] = i
+    if i in one_char:
+        ans[word[0]] = i
+    else:
+        ans[word[:2]] = i
   
 print(ans)

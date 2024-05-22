@@ -4,7 +4,7 @@
 '''
 
 def ngram(n, lst):
-  return list(lst[i:i+n] for i in range(len(lst) - n + 1))
+    return list(lst[i:i+n] for i in range(len(lst) - n + 1))
 
 str = "I am an NLPer"
 words = str.split()
