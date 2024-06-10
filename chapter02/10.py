@@ -1,3 +1,7 @@
+'''
+10.行数のカウント
+行数をカウントせよ．確認にはwcコマンドを用いよ．
+'''
 import pandas as pd
 
 df = pd.read_table('./github/nlp100/chapter02/data/popular-names.txt', header=None, names=['name', 'sex', 'number', 'year'])
