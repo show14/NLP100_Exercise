@@ -4,10 +4,10 @@
 '''
 import pandas as pd
 
-df = pd.read_table('./github/nlp100/chapter02/data/popular-names.txt', header=None, names=['name', 'sex', 'number', 'year'])
+df = pd.read_table('./chapter02/data/popular-names.txt', header=None, names=['name', 'sex', 'number', 'year'])
 print(len(df))
 
 '''
 ターミナルの場合
-wc -l ./github/nlp100/chapter02/data/popular-names.txt
+wc -l ./chapter02/data/popular-names.txt
 '''
