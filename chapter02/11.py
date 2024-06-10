@@ -10,15 +10,15 @@ def replace_tabs_with_spaces(filename):
     #タブをスペースに置換
     replaced_content = content.replace('\t',' ')
     
-    with open('[PATH]/output.txt', 'w') as file:
+    with open('output.txt', 'w') as file:
         file.write(replaced_content)
         
-replace_tabs_with_spaces('[PATH]/popular-names.txt')
+replace_tabs_with_spaces('popular-names.txt')
 '''
 ターミナルの場合
-tr '\t' ' ' < [PATH]/popular-names.txt > [PATH]/output.txt
+tr '\t' ' ' < popular-names.txt > output.txt
 or
-sed 's/\t/ /g' [PATH]/popular-names.txt > [PATH]/output.txt
+sed 's/\t/ /g' popular-names.txt > output.txt
 or
-expand -t 1 [PATH]/popular-names.txt > [PATH]/output.txt
+expand -t 1 popular-names.txt > output.txt
 '''

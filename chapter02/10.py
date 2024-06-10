@@ -4,10 +4,10 @@
 '''
 import pandas as pd
 
-df = pd.read_table('[PATH]/popular-names.txt', header=None, names=['name', 'sex', 'number', 'year'])
+df = pd.read_table('popular-names.txt', header=None, names=['name', 'sex', 'number', 'year'])
 print(len(df))
 
 '''
 ターミナルの場合
-wc -l [PATH]/popular-names.txt
+wc -l popular-names.txt
 '''
