@@ -8,10 +8,9 @@ def print_initial_lines(filename, n):
     """ファイルから先頭のn行だけを表示する"""
     
     with open(filename, 'r') as file:
-        for i in range(n):
-            line = file.readline()
-            if not line:
-                break
+        lines = file.readlines()
+        initial_n_lines = lines[:n]
+        for line in initial_n_lines:
             print(line, end='')
             
 filename = "popular-names.txt"
