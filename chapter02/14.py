@@ -14,7 +14,7 @@ def print_initial_lines(filename, n):
                 break
             print(line, end='')
             
-filename = "popular-names.txt"  # ここでファイル名を直接指定
+filename = "popular-names.txt"
 n = int(sys.argv[1])
 print_initial_lines(filename, n)
 '''
